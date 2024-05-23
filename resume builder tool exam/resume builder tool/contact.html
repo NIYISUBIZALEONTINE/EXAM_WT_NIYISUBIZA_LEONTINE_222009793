@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Tool</title>
+    <style>
+        body {
+            background-image: url('./tool.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: darkblue;
+            border-bottom: 5px solid black;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: greenyellow; /* Changed color to white */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: none;
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: red;
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: green; 
+            text-align: center; 
+            width: 100%; 
+            height: 50px; /* Reduced height to 50px */
+            color: white; 
+            font-size: 10px; /* Reduced font size */
+            margin-top: 50px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: teal;
+            border-radius: 5px;
+            width: 50%;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: teal;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="tool.png" alt="Logo">
+    <h3 style="color: white;"><i>resume builder tool</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li class="dropdown">
+           <a href="#">Forms</a>
+            <div class="dropdown-contents">
+              <a href="Registration.php">Registration</a>  
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Tables</a>
+            <div class="dropdown-contents">
+                <a href="resumes.php">resumes</a>
+                <a href="education.php">education</a>
+                <a href="work_experiences.php">work_experiences</a>
+                <a href="skills.php">skills</a>
+                <a href="projects.php">projects</a>
+                <a href="certifications.php">certifications</a>
+                <a href="languages.php">languages</a>
+                <a href="awards.php">awards</a>
+                <a href="interest.php">interest</a>
+                <a href="reference.php">reference</a>
+            </div>
+
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.html">Login</a>
+                <a href="userdata.php">register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<section>
+  <h2><bold><u> OUR CONTACT</u></bold></h2>
+  <ul></ul>
+  <li>Address: 270 Main Street, Kigali city, Rwanda</li>
+  <li>Phone: +250 721013047</li>
+  <li>Email: resumebuildertool@gmail.com</li>
+  <li>X: phyiro</li>
+  <li>Facebook: resume builder tool</li>
+  <li>IG: resume builder tool 300</li>
+</ul>
+
+<form action="submit_contact" method="POST">
+  <label for="name">Names:</label><br>
+  <input type="text" id="name" name="name" required><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+
+  <label for="phone">Telephone:</label><br>
+  <input type="tel" id="phone" name="phone"><br>
+
+  <label for="X">X:</label><br>
+  <input type="X" id="X" name="X"><br>
+
+  <label for="Ig">Instagram:</label><br>
+  <input type="Ig" id="Ig" name="Ig"><br>
+
+  <label for="Faceb">Facebook:</label><br>
+  <input type="Faceb" id="Faceb" name="Faceb"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <input type="submit" value="send">
+</form>
+<p>Connect with us on social media or social networkings:
+
+  <a href="https://www.X.com/resumebuildertool">X</a>
+  <a href="https://www.facebook.com/resumebuildertool">Facebook</a>
+  <a href="https://www.instagram.com/resumebuildertool">Instagram</a>
+  <a href="https://www.linkedin.com/resumebuildertool">LinkedIn</a>
+</p>
+</section>
+
+<footer>
+  <center> 
+    <b><h2>UR CBE BIT &copy, 2024 &reg222009793, Designer by: NIYISUBIZA leontine</h2></b>
+  </center>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- JavaScript validation and content load for insert data-->
+    <script>
+        function confirmInsert() {
+            return confirm('Are you ready to insert this notification?');
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Tool</title>
+    <style>
+        body {
+            background-image: url('./tool.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: orange;
+            border-bottom: 5px solid black;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+        }
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: none;
+            flex-grow: 2; 
+        }
+        .navigation li {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 5px;
+        }
+        .navigation li:last-child {
+            margin-right: 0;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: green; /* Changed color to white */
+        }
+        .dropdown-contents {
+            display: none;
+            position: absolute;
+            background-color: none;
+            text-decoration: none;
+        }
+        .dropdown-contents a {
+            color: black;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-contents a:hover {
+            background-color: blue;
+        }
+        .dropdown:hover .dropdown-contents {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+        }
+        footer {
+            background-color: orange; 
+            text-align: center; 
+            width: 100%; 
+            height: 90px; 
+            color: white; 
+            font-size: 25px; 
+            margin-top: 20px; 
+            bottom: 0; 
+            left: 0;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <img class="logo" src="tool.png" alt="Logo">
+    <h3 style="color: white;"><i>resume builder tool</i></h3>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact </a></li>
+        <li class="dropdown">
+           <a href="#">Forms</a>
+            <div class="dropdown-contents">
+                <a href="Registration.php">Registration</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Tables</a>
+            <div class="dropdown-contents">
+                <a href="resumes.php">resumes</a>
+                <a href="education.php">education</a>
+                <a href="work_experiences.php">work_experiences</a>
+                <a href="skills.php">skills</a>
+                <a href="projects.php">projects</a>
+                <a href="certifications.php">certifications</a>
+                <a href="languages.php">languages</a>
+                <a href="awards.php">awards</a>
+                <a href="interest.php">interest</a>
+                <a href="reference.php">reference</a>
+            </div>
+
+        </li>
+    </ul>
+</div>
+        </li>
+        <li class="dropdown">
+            <a href="#">Settings</a>
+            <div class="dropdown-contents">
+                <a href="login.html">Login</a>
+                <a href="userdata.php">register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<section>
+    <h2><bold><u>OUR MISSION</u></bold></h2>
+    <h2 style="color: blue;">
+      <p><h3 style="color: blue;">Our mission is to help individuals create professional and effective resumes. its main objectives are to simplify the resumes creation process, provide customazable templates,offer guidances and suggestions for content, ensure proper formatting and layout, and ultimately assist user in presenting their skills and experiencesin the best possible way to potential employters.To help you and your team along the path,use these tools and resoursces expertly designed to help accelerate the success of individuals,families and teams.:</h3></p>
+    </h2>
+<p>
+  <h3 style="color: blue;">The tool aims to save time and effort for job seekers and increase their chances of landing interviews and securing employment opportunities.</h3>
+</p>
+    <h2 style="color: black;"><bold><u>WHAT DO WE DO</u></bold></h2>
+    <p>
+      <h3 style="color: blue;">1.Input personal information: Users can enter their contact details ,such as names,address,phone number,and email address</h3>
+    </p>
+    <p>
+      <h3 style="color:blue;">2.Choose a Template:users can select a proffessional template from a collection of pre_designed layouts that suit their industry or personal preference.</h4>
+    </p>
+    <p>
+      <h3 style="color:blue;">3.Enter work experiences:users can add their work history,including job titles,company names,dates of employment, and a description of their responsibilities and achievement</h5>
+    </p>
+    <p>
+      <h3 style="color:blue;">4.Include Education Details: users can input their educational background,including degress ,certifications,institutions attended,and dates of graduations.</h3>
+    </p>
+    <p>
+    <h3 style="color: blue;">5.Add Skills and Qualifications:users can highlight their relevant skills ,both techinical and soft skills ,thatare applicable to the desired job.</h3>
+    </p>
+    <p>
+    <h3 style="color: blue;">6.Customize Sections:users can rearrange or modify the order of resume sections,such as work experiences, education, skills and additioanal information.</h3>
+    </p>
+    <p>
+    <h3 style="color: blue;">7.Provide Additioanal Information:users can include additional details, such as volunteer work,awards,publications or any other relevant information that can enhances their candidacy.</h3>
+    </p>
+    <p>
+    <h3 style="color: blue;">8.Format and Design:users can customize the font style, colors, and overall visual appearance of their resume to create o professional and vissually appealing document.</h3>
+  </p>
+    <p>
+    <h3 style="color: blue;">9.Review and Edit: users can review their resume, makes edits, and ensure that the content is accurate, well_organized, and free of errors.</h3>
+  </p>
+    <p>
+    <h3 style="color: blue;">10.Download or Share:once the resume is complete, user can download it in various formats(such as PDF or Word) or share it directly with potential employers through emails or online job platforms.</h3>
+  </p>
+  </section>
+
+<footer>
+    <p>UR CBE BIT &copy, 2024 &reg222009793, Designer by: leontine Niyisubiza</p>
+</footer>
+</body>
+</html>
